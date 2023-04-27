@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoBlazor.Wasm", "CursoBl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. DataBase", "0. DataBase", "{8720A735-F1F2-4AF7-91A8-D5EBE183EE34}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Documents\SQL Server Management Studio\DAC Packages\CursoBlazor.bacpac = ..\..\..\Documents\SQL Server Management Studio\DAC Packages\CursoBlazor.bacpac
+		..\..\..\Documents\scriptBdBlazor.sql = ..\..\..\Documents\scriptBdBlazor.sql
 	EndProjectSection
 EndProject
 Global
