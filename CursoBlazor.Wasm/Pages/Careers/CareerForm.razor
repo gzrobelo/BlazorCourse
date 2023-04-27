@@ -1,0 +1,36 @@
+﻿@using CursoBlazor.Core.DTOs;
+<EditForm Model="@CareerModel" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label class="form-label">Clave:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@CareerModel.CareerKey" />
+            <ValidationMessage For="@(() => CareerModel.CareerKey)" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@CareerModel.Name" />
+            <ValidationMessage For="@(() => CareerModel.Name)" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Descripcion:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@CareerModel.Description" />
+        </div>
+    </div>
+    <button class="btn btn-success" type="submit">Guardar</button>
+</EditForm>
+@code {
+    [EditorRequired]
+    [Parameter]
+    public CareerDto CareerModel { get; set; } = null!;
+
+    [EditorRequired]
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+
+    
+}

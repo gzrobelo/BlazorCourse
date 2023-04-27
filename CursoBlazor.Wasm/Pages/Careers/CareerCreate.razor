@@ -1,0 +1,42 @@
+﻿
+@page "/careers/create"
+
+@using CursoBlazor.Core.DTOs;
+@using CursoBlazor.Core.Models;
+
+
+<h3>Agregar nueva carrera</h3>
+
+<EditForm Model="@CareerModel" OnValidSubmit="Create">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label class="form-label">Clave:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@CareerModel.CareerKey"/>
+            <ValidationMessage For="@(() => CareerModel.CareerKey)" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@CareerModel.Name" />
+            <ValidationMessage For="@(() => CareerModel.Name)" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Descripcion:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@CareerModel.Description" />
+        </div>
+    </div>
+    <button class="btn btn-success" type="submit">Guardar</button>
+</EditForm>
+@code {
+    private CareerDto CareerModel = new CareerDto();
+
+    private void Create()
+    {
+        Console.WriteLine("Ejecutando el metodo Crear");
+        Console.WriteLine($"Nombre de la carrera: {0}",CareerModel.Name);
+    }
+}

@@ -1,0 +1,28 @@
+﻿@page "/careers/edit/{CareerId:Guid}"
+@using CursoBlazor.Core.DTOs;
+
+<h3>Editar Carrera</h3>
+
+<CareerForm CareerModel="CareerModel" OnValidSubmit="Edit" />
+@code {
+    [Parameter]
+    public Guid CareerId { get; set; }
+
+    private CareerDto? CareerModel;
+
+    protected override void OnInitialized()
+    {
+        CareerModel = new CareerDto()
+        {
+             Id = CareerId,
+             CareerKey = "IIOO",
+             Name = "InInformatica"
+        };
+    }
+
+    private void Edit()
+    {
+        Console.WriteLine("Editando Carrera");
+
+    }
+}
