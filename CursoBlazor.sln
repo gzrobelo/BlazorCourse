@@ -22,9 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoBlazor.Wasm", "CursoBlazor.Wasm\CursoBlazor.Wasm.csproj", "{548BAFA8-A6E1-4AAE-AFC8-ABA714C9B0D9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. DataBase", "0. DataBase", "{8720A735-F1F2-4AF7-91A8-D5EBE183EE34}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Documents\scriptBdBlazor.sql = ..\..\..\Documents\scriptBdBlazor.sql
-	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CursoBlazor.Database", "CursoBlazor.Database\CursoBlazor.Database.sqlproj", "{670C14F3-5DB9-4A49-B0A9-73C357451F56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +51,12 @@ Global
 		{548BAFA8-A6E1-4AAE-AFC8-ABA714C9B0D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{548BAFA8-A6E1-4AAE-AFC8-ABA714C9B0D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{548BAFA8-A6E1-4AAE-AFC8-ABA714C9B0D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670C14F3-5DB9-4A49-B0A9-73C357451F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670C14F3-5DB9-4A49-B0A9-73C357451F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670C14F3-5DB9-4A49-B0A9-73C357451F56}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{670C14F3-5DB9-4A49-B0A9-73C357451F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670C14F3-5DB9-4A49-B0A9-73C357451F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670C14F3-5DB9-4A49-B0A9-73C357451F56}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +67,7 @@ Global
 		{1B5AF99C-207C-457D-AB02-7D44EC7E394F} = {DCBC18A6-6A0B-4B21-9F5D-CBEC3DC3378E}
 		{A2A2AFCF-D82D-4C0B-98C5-CB6FEF649A80} = {A1D0D3C5-127E-4DDD-9F41-2E962B44B8D0}
 		{548BAFA8-A6E1-4AAE-AFC8-ABA714C9B0D9} = {A3029355-1DC1-44D0-B669-4C081D999C27}
+		{670C14F3-5DB9-4A49-B0A9-73C357451F56} = {8720A735-F1F2-4AF7-91A8-D5EBE183EE34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32936503-03EF-495B-8CF7-2E63B69181D5}
